@@ -57,7 +57,9 @@
         
     } else if (self.lzType == LZRelayoutButtonTypeBottom) {
         
-        return CGRectMake(0,   self.offset + self.imageSize.height , contentRect.size.width , contentRect.size.height - self.offset - self.imageSize.height );
+        CGFloat labelHeight =[_btnTitle sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:18]}].height;
+        
+        return CGRectMake(0,  self.frame.size.height - labelHeight , contentRect.size.width , labelHeight );
         
     } else {
         return [super titleRectForContentRect:contentRect];

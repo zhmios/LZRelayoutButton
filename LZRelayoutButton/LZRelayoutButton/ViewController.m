@@ -51,6 +51,7 @@
     lz1.frame = CGRectMake(50, 300, 80, 100);
     lz1.imageSize = CGSizeMake(80, 80);
     lz1.lzType = LZRelayoutButtonTypeBottom;
+    lz1.btnTitle = @"标题在下";
     [lz1 setTitle:@"标题在下" forState:UIControlStateNormal];
     [lz1 setImage:[UIImage imageNamed:@"AppIcon60x60"] forState:UIControlStateNormal];
 //    [lz1 setImage:[UIImage imageNamed:@"check_icon"] forState:UIControlStateNormal];

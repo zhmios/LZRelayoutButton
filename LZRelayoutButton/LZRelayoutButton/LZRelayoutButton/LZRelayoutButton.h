@@ -11,6 +11,7 @@ typedef NS_ENUM(NSInteger,LZRelayoutButtonType) {
     LZRelayoutButtonTypeNomal  = 0,//默认
     LZRelayoutButtonTypeLeft   = 1,//标题在左
     LZRelayoutButtonTypeBottom = 2,//标题在下
+    
 };
 
 @interface LZRelayoutButton : UIButton
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSInteger,LZRelayoutButtonType) {
 @property (assign,nonatomic)IBInspectable CGSize imageSize;
 ///图片相对于 top/right 的 offset
 @property (assign,nonatomic)IBInspectable CGFloat offset;
-
+@property (strong,nonatomic)NSString *btnTitle;
 @property (assign,nonatomic)IBInspectable LZRelayoutButtonType lzType;
 
 @end
