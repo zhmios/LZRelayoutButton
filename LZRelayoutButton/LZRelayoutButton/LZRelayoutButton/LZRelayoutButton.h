@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger,LZRelayoutButtonType) {
 ///图片相对于 top/right 的 offset
 @property (assign,nonatomic)IBInspectable CGFloat offset;
 @property (strong,nonatomic)NSString *btnTitle;
+@property (assign, nonatomic)CGFloat titleOffset;
 @property (assign,nonatomic)IBInspectable LZRelayoutButtonType lzType;
 
 @end

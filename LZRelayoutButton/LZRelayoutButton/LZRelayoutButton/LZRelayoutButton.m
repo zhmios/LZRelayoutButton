@@ -59,7 +59,7 @@
         
         CGFloat labelHeight =[_btnTitle sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:18]}].height;
         
-        return CGRectMake(0,  self.frame.size.height - labelHeight , contentRect.size.width , labelHeight );
+        return CGRectMake(0,  self.frame.size.height - labelHeight - self.titleOffset , contentRect.size.width , labelHeight );
         
     } else {
         return [super titleRectForContentRect:contentRect];
